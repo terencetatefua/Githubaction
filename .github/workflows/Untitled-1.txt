@@ -6,7 +6,7 @@ export AWS_SECRET_ACCESS_KEY="<YOUR_SECRET_KEY>"
 export AWS_DEFAULT_REGION="<YOUR_REGION>"
 
 # Step 2: Spin up an EC2 instance
-aws ec2 run-instances --image-id ami-027e5d5ba5f5ceb45 --count 1 --instance-type t2.micro --key-name <YOUR_KEYNAME> 
+aws ec2 run-instances --image-id ami-027e5d5ba5f5ceb45 --count 1 --instance-type t2.micro --key-name Githubaction 
 
 # Step 3: Install dependencies
 sudo apt-get update && sudo apt-get install -y python python-pip unzip

@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Githubaction
+kind: Deployment
 metadata:
   name: Githubaction
   labels:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: Githubaction
-          image: 274127640471.dkr.ecr.us-east-2.amazonaws.com/Githubaction:1.1
+          image: 920100595657.dkr.ecr.us-east-1.amazonaws.com/githubaction:1.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
